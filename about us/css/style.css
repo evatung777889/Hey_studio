@@ -1,0 +1,103 @@
+@import url('reset.css');
+
+
+
+.big_pic{
+    background-image: url("../pic/big_pic.png");
+    background-size: cover;
+    background-position: center center;     
+}
+
+.big_pic img{
+    width: 100%;
+    
+}
+
+.big_pic h1{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    line-height: 650px;
+    font-weight: bold;
+}
+
+.logo_3{
+    display: block;
+    text-align: center;
+}
+
+.logo_3 img{
+    margin-bottom: 40px;
+}
+
+.logo_3 p{
+    margin-bottom: 100px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.about{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.about img{
+    width: 55%;
+    margin-right: 80px;
+}
+
+.word{
+    flex-direction: column;
+    line-height: 1.8;
+}
+
+
+h3{
+    font-size: 32px;
+    color: #B4664D;
+    line-height: 1.6;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.word p{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.center_background{
+    background-image: url("../pic/Rectangle\ 347.png");
+    width: 100%;
+    padding-bottom:450px ;
+    position: absolute;
+    top: 1400px;
+    z-index: -1;
+}
+
+.diversity{
+    max-width: 1100px;
+    margin: 150px auto 0px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.diversity p{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.diversity ul{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.diversity img{
+    width: 80%;
+
+}
+
+

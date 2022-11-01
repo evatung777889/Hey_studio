@@ -1,0 +1,107 @@
+@import url('reset.css');
+
+
+.wrapper{
+    max-width: 1250px;
+    margin: auto;
+}
+/*--------------左邊選單+圖片--------------*/
+.center_list_pic{
+    display: flex;
+    width: 100%;
+}
+
+.center_list{
+    margin: 180px 180px 50px 100px;
+}
+
+.center_pic{
+    margin-top: 150px;
+}
+
+.center_list h3{
+    font-size: 20px;
+    color: #575757;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.center_list li{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.center_list a{
+    text-decoration: none;
+    color: black;
+}
+
+.center_list a:hover{
+    color: rgb(249, 11, 11);
+}
+
+/*--------------商品列表--------------*/
+.category_list{
+    max-width: 824px;
+    margin: 50px 0px 0px 355px;
+    font-size: 18px;
+}
+
+.category_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 auto;
+   
+}
+
+.category_list li{
+    margin-left: 45px;
+    text-align: center;
+}
+
+.category_list li a{
+    text-decoration: none;
+}
+
+.category_list li p{
+    color: #B4664D;
+    margin: 10px 0 30px;
+    line-height: 1.6;
+}
+
+.category_list li p:hover{
+    color: rgb(255, 2, 2);
+}
+
+
+/*--------------換頁--------------*/
+
+.change_page{
+    margin-left: 735px;
+    max-width: 100px;
+}
+
+.change_page ul{
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.change_page li{
+    flex-grow: 1;
+}
+
+.change_page a{
+    text-decoration: none;
+    color: black;
+}
+
+.change_page a:hover{
+    color: red;
+}
+
+.fa-angle-left{
+    display: none;
+}

@@ -1,0 +1,190 @@
+@import url('reset.css');
+
+
+
+:target:before {
+    content: "";
+    display: block;
+    height:100px;
+}
+
+/*-----------header----------*/
+#header{
+    background-color: rgba(255, 255, 255,.9);
+    border-bottom: 1px solid #999;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.header_container{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logo_1 img{
+    display: block;
+    padding-top: 6%;
+    padding-left: 16%;
+    padding-bottom: 6%;
+    margin-bottom: 10px;
+    
+}
+
+.list{
+    width: 800px;
+    margin-left: 2%;
+}
+
+.list ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.list ul li{
+    flex-grow: 1;
+}
+
+.list a{
+    display: block;
+    line-height:65px;
+    padding-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
+}
+
+.list a:hover{
+    color: red;
+}
+
+.list ol{
+    display: none;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.list ol a{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    line-height: 3;
+}
+
+.list li:hover ol{
+    display: block;
+    color: red;
+    border-top: 2px solid red;
+}
+
+.icon{
+    width: 15%;
+    padding-top: 20px;
+ 
+}
+
+.icon a{
+    padding-left: 20px;
+    color:rgb(116, 109, 109);
+}
+
+.icon a:hover{
+    color: rgb(218, 15, 15);
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  font-weight:bolder;
+}
+
+#box{
+    display: flex;
+    padding-left: 6%;
+}
+
+#bar{
+    display: none;
+}
+
+/*-----------footer----------*/
+#footer{
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid #999;
+}
+
+.smail_logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.smail_icon{
+    display: flex;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.smail_icon a{
+    display: block;
+    color:rgb(116, 109, 109);
+    padding-left: 20px; 
+        
+}
+
+#footer_list{
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.group{
+    flex-grow:1;
+}
+
+.group h1{
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#footer_list a{
+    text-decoration: none;
+    color: gray;
+    display: block;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#footer_list a:hover{
+    color: rgb(218, 15, 15);
+}
+
+.references{
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+    line-height: 1.6;
+    padding-bottom: 10px;
+
+    
+}
+
+.references h2{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+
+.smail_icon .fa-brands:hover{
+    color: rgb(218, 15, 15);
+    
+}

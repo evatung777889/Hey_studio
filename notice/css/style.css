@@ -1,0 +1,166 @@
+@import url('reset.css');
+
+
+.top{
+    display: flex;
+    position: relative;
+    height: 480px;
+    margin-bottom: 50px;
+    background-color: rgb(253,245,245);
+    padding-top: 100px;
+    width: 1300px;
+    margin: auto;
+}
+
+.top_title{
+    font-size: 50px;
+    color: rgb(87,87,87);
+    font-weight: bold;
+    width: 300px;
+    letter-spacing: 15px;
+    line-height: 2;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 120px;
+    
+}
+
+.top_img{
+    display: block;
+    margin-left: 150px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.top_img_2{
+    position: absolute;
+    right: 150px;
+    top: 190px;
+}
+
+.choose {
+    width: 900px;
+    margin: auto;
+}
+
+.choose ul{
+    display: flex;
+}
+.choose li{
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 8px;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.choose a{
+    text-decoration: none;
+    display: block;
+    border: 1.5px solid black;
+    width: 125px;
+    color: black;
+    font-weight: bold;
+    margin: 50px auto 0;
+}
+
+.choose a:hover{
+    color: rgb(250, 250, 250);
+    background-color: black;
+}
+
+#word{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    /* outline: 2px solid blue; */
+}
+
+#word li h3{
+    color: rgb(186,141,22);
+    font-size: 20px;
+    margin: 10px 0 10px;
+    font-weight: bold;
+    padding-left: 220px;
+}
+
+#word li p{
+    font-size: 18px;
+    line-height: 2.5;
+    padding-left: 220px;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 200px;
+}
+
+.word_1{
+    width: 2000px;
+}
+
+.word_2{
+    width: 2000px;
+}
+
+.word_2 p{
+    margin-bottom: 100px;
+}
+
+.method_1 {
+    width: 1200px;
+    padding-left: 50px;
+    display: flex;
+   
+}
+
+.method_1 img{
+    width: 40%;
+}
+
+.img_1{
+    padding-top: 100px;
+    width: 700px;
+    padding-right:100px ;
+}
+
+.method_2 {
+    width: 1200px;
+    padding-left: 50px;
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.method_2 img{
+    width: 40%;
+    
+}
+
+.img_2{
+    padding-top: 150px;
+    width: 700px;
+    padding-right:100px ;
+}
+
+.bic{
+    background-image: url('../pic/bg_1.png');
+    position: relative;
+}
+
+.bic h3{
+    padding-top: 50px;
+}
+
+.bg_2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#term01{
+    margin-top: 50px;
+}
+
