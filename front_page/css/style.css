@@ -1,5 +1,9 @@
 @import url('reset.css');
 
+body{
+    font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+}
+
 .top_pic{
     background-image: url("../pic/carousel_1.png");
     background-repeat: no-repeat;
@@ -103,7 +107,7 @@
     width: 70%;
 }
 
-.category h3{
+.category h3,.news_list h4{
     font-size: 24px;
     color: #B4664D;
     font-weight: bold;
@@ -128,7 +132,7 @@
 
 .category p{
     font-size: 18px;
-    color: #707070;
+    color: #4c4a4a;
 }
 
 .category h4:hover{
@@ -136,5 +140,108 @@
 }
 
 .category p:hover{
+    color: red;
+}
+
+.word_new{
+
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+.word_new p{
+    font-size: 18px;
+    line-height: 2;
+    color: #4c4a4a;
+}
+
+.pic_list{
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0 50px;
+}
+
+.pic_list ul{
+    display: flex;
+}
+
+.pic_list ul li{ 
+    margin-left: 20px;
+}
+
+.pic_list img{
+   width: 70%;
+   margin-left: 50px;
+}
+
+.pic_list p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+    background-color: #F6F5F0;
+    color: #4c4a4a;
+ }
+
+ .pic_list .pic1{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    
+
+ }
+
+ .pic_list .pic2{
+    margin-bottom: 30px;
+    padding-top: 20px;
+ }
+
+ .pic{
+    position: relative;
+ }
+
+ .bag_pic{
+    background-image: url('../pic/pic_bag_1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 142px;
+    width: 100%;;
+    height: 280px;
+    z-index: -1;
+
+ }
+
+ .news_list{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.news_list ul{
+    display: flex;
+    justify-content: center;/*水平對齊*/
+    align-items: center;/*垂直對齊*/
+}
+
+.news_list li{
+    flex-grow: 1;
+    text-align: center;
+    line-height: 2;
+}
+
+.news_list li h5{
+    font-size: 20px;
+    color: rgb(186,141,22);
+}
+
+.news_list li p{
+    font-size: 16px;
+    color: #4c4a4a;
+}
+
+.news_list li a{
+    text-decoration: none;
+}
+
+.news_list li h5:hover,.news_list li p:hover{
     color: red;
 }

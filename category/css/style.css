@@ -1,5 +1,8 @@
 @import url('reset.css');
 
+body{
+    font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+}
 
 .wrapper{
     max-width: 1250px;
@@ -23,7 +26,7 @@
     font-size: 20px;
     color: #575757;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .center_list li{
@@ -43,7 +46,7 @@
 /*--------------商品列表--------------*/
 .category_list{
     max-width: 824px;
-    margin: 50px 0px 0px 355px;
+    margin: 50px 0px 50px 355px;
     font-size: 18px;
 }
 

@@ -1,15 +1,25 @@
 @import url('reset.css');
 
+body{
+    font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+}
 
 .top{
-    display: flex;
-    position: relative;
     height: 480px;
     margin-bottom: 50px;
     background-color: rgb(253,245,245);
     padding-top: 100px;
-    width: 1300px;
-    margin: auto;
+}
+
+.top_out{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.top img{
+    position: relative;
 }
 
 .top_title{
@@ -34,8 +44,8 @@
 
 .top_img_2{
     position: absolute;
-    right: 150px;
-    top: 190px;
+    right: 35px;
+    top: -39px;
 }
 
 .choose {
@@ -161,6 +171,6 @@ h4{
 }
 
 #term01{
-    margin-top: 50px;
+    padding-top: 80px;
 }
 

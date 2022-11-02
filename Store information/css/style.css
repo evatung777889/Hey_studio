@@ -1,6 +1,8 @@
 @import url('reset.css');
 
-
+body{
+    font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+}
 
 .outside{
     position: relative;
@@ -8,7 +10,7 @@
 }
 
 .outside img{
-    width: 100%;
+    width:100%;
 }
 
 .pic_buttom{
