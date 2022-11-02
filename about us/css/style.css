@@ -1,7 +1,12 @@
 @import url('reset.css');
 
+@font-face {
+    font-family: '源流明體';
+    src: url(../../word/genryu-font-master/ttc/GenRyuMin-M.ttc);
+}
+
 body{
-    font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+    font-family: '源流明體',Arial, Helvetica, sans-serif;
 }
 
 .big_pic{

@@ -1,7 +1,12 @@
 @import url('reset.css');
 
+@font-face {
+    font-family: '源流明體';
+    src: url(../../word/genryu-font-master/ttc/GenRyuMin-M.ttc);
+}
+
 body{
-    font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+    font-family: '源流明體',Arial, Helvetica, sans-serif;
 }
 
 .choose {
@@ -50,18 +55,18 @@ body{
 
 .news img:nth-child(odd){
     width: 45%;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .news img:nth-child(even){
     width: 45%;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .word{
     text-align: center;
     max-width: 252px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .word_1{
