@@ -22,16 +22,14 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .logo_1 img{
     display: block;
     padding-top: 6%;
     padding-left: 16%;
-    padding-bottom: 6%;
-    margin-bottom: 10px;
-    
+    margin-top: 10px;
 }
 
 .list{
@@ -57,7 +55,6 @@
     text-decoration: none;
     text-align: center;
     color: rgb(0, 0, 0);
-    /* font-weight: bold; */
 }
 
 .list a:hover{

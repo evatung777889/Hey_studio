@@ -27,6 +27,10 @@ body{
     margin-top: 150px;
 }
 
+.center_pic img{
+    width: 100%;
+}
+
 .center_list h3{
     font-size: 20px;
     color: #575757;
@@ -50,7 +54,7 @@ body{
 
 /*--------------商品列表--------------*/
 .category_list{
-    max-width: 824px;
+    max-width: 67%;
     margin: 50px 0px 50px 355px;
     font-size: 18px;
 }
@@ -58,13 +62,11 @@ body{
 .category_list ul{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
     margin: 0 auto;
-   
+    justify-content: space-between;
 }
 
 .category_list li{
-    margin-left: 45px;
     text-align: center;
 }
 
@@ -86,7 +88,7 @@ body{
 /*--------------換頁--------------*/
 
 .change_page{
-    margin-left: 735px;
+    margin-left: 730px;
     max-width: 100px;
 }
 
