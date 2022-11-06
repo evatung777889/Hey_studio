@@ -8,8 +8,8 @@
 
 @font-face {
     font-family: 'custom';
-    src: url(../../word/english/static/DancingScript-Medium.ttf);
-    unicode-range: U+00-024F;
+    src: url(../../word/english/DancingScript-VariableFont_wght.ttf);
+    unicode-range:U+000-5FF;
 }
 
 body{
@@ -281,4 +281,8 @@ body{
 
 .news_list li h5:hover{
     color: red;
+}
+
+#header .list ul li ol{
+    font-family: Arial, Helvetica, sans-serif;
 }

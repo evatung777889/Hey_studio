@@ -62,7 +62,6 @@ body{
 .category_list ul{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -83,6 +82,11 @@ body{
 .category_list li p:hover{
     color: rgb(255, 2, 2);
 }
+
+.category_list img{
+    width: 100%;
+}
+
 
 
 /*--------------換頁--------------*/
