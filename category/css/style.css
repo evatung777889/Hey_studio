@@ -20,15 +20,11 @@ body{
 }
 
 .center_list{
-    margin: 180px 180px 50px 100px;
+    padding: 155px 180px 50px 100px;
 }
 
-.center_pic{
-    margin-top: 150px;
-}
-
-.center_pic img{
-    width: 100%;
+.center_list_pic{
+    margin-bottom: 100px;
 }
 
 .center_list h3{
@@ -53,9 +49,35 @@ body{
 }
 
 /*--------------商品列表--------------*/
+
+.category_list_bread{
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.category_list_bread .bread_1 p{
+    margin-right: 10px;
+    color: rgb(102, 99, 99);
+}
+
+.category_list_bread a{
+    text-decoration: none;
+}
+
+.category_list_bread .bread_1 p{
+    margin-right: 10px;
+}
+
+.category_list_bread .bread_2 p{
+    margin-left: 10px;
+    color: rgb(102, 99, 99);
+}
+
+
+
 .category_list{
     max-width: 67%;
-    margin: 50px 0px 50px 355px;
+    margin-top:150px ;
     font-size: 18px;
 }
 
@@ -92,19 +114,15 @@ body{
 /*--------------換頁--------------*/
 
 .change_page{
-    margin-left: 730px;
     max-width: 100px;
+    margin: auto;
+       
 }
 
 .change_page ul{
-    display: flex;
-    text-align: center;
     margin-bottom: 100px;
     margin-top: 50px;
-}
-
-.change_page li{
-    flex-grow: 1;
+    display: flex;
 }
 
 .change_page a{

@@ -18,21 +18,27 @@ body{
 
 .top_pic{
     background-image: url("../pic/carousel_1.png");
-    background-repeat: no-repeat;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
     position: relative;
     background-size: cover;
     background-position: center center;
-    width: 100%;
+    max-width: 100%;
+    height: 500px;
+
 }
 
 .top_pic_word{
-    padding-top:300px;
+    padding-top:200px;
     width: 70%;
     font-size: 60px;
     color: white;
-    margin-left: 100px;
     line-height: 2;
+    margin: 0 auto;
+}
+
+.top_pic img{
+    position: absolute;
+    
 }
 
 .top_pic_word .num1{
@@ -41,6 +47,18 @@ body{
 
 .top_pic_word .num2{
     letter-spacing: 10px;
+}
+
+.top_pic_word .num3{
+    letter-spacing: 50px;
+    display: none;
+    font-size: 50px;
+}
+
+.top_pic_word .num4{
+    letter-spacing: 10px;
+    display: none;
+    font-size: 50px;
 }
 
 .top_pic img{
@@ -183,7 +201,8 @@ body{
 .word_new{
 
     text-align: center;
-    margin: 100px 0 50px;
+    margin: 120px 0 30px;
+    width: 100%;
 }
 
 .word_new p{
@@ -286,3 +305,4 @@ body{
 #header .list ul li ol{
     font-family: Arial, Helvetica, sans-serif;
 }
+

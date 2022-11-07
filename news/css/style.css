@@ -130,3 +130,29 @@ h4{
     line-height: 2;
 }
 
+/*--------------換頁--------------*/
+
+.change_page{
+    max-width: 100px;
+    margin: auto;
+       
+}
+
+.change_page ul{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.change_page a{
+    text-decoration: none;
+    color: black;
+}
+
+.change_page a:hover{
+    color: red;
+}
+
+.fa-angle-left{
+    display: none;
+}
