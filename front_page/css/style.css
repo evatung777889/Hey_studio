@@ -97,13 +97,18 @@ body{
     width: 70%;
     margin: 0 auto;
     padding-top: 30px;
+    transform:scale(1,1);transition: all .5s ease-out;
 }
+.new_arrive img:hover{
+    transform:scale(1.1,1.1);
+}
+
 
 .new_arrive h6{
     color: #000000;
     line-height: 2;
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .new_arrive p{
@@ -162,6 +167,11 @@ body{
 
 .category img{
     width: 70%;
+    transform:scale(1,1);transition: all .5s ease-out;
+}
+
+.category img:hover{
+    transform:scale(1.1,1.1);
 }
 
 .category h3,.news_list h4{
@@ -272,6 +282,11 @@ body{
     margin-bottom: 150px;
 }
 
+.news_list .owl-carousel .owl-item img{
+    width: 80%;
+    margin: auto;
+}
+
 .news_list ul{
     display: flex;
     justify-content: center;/*水平對齊*/
@@ -296,6 +311,15 @@ body{
 
 .news_list li a{
     text-decoration: none;
+}
+
+.news_list span{
+    color: #000000;
+    font-size: 25px;
+}
+
+.news_list span:hover{
+    color: red;
 }
 
 .news_list li h5:hover{

@@ -1,0 +1,43 @@
+@media screen and (max-width:414px){
+    .outside{
+        padding-top: 0;
+    }
+
+    .outside img{
+        width: 100%;
+    }
+
+    .pic_buttom{
+        bottom: -28px;
+    }
+
+    #center h1{
+        margin-top: 60px;
+        font-size: 24px;
+    }
+
+    #wrapper{
+        flex-direction: column;
+    }
+
+    .information{
+        width: 100%;
+    }
+
+    .information h2{
+        font-size: 20px;
+    }
+    .information p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #map{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .logo_1{
+        padding-left: 68px;
+    }
+}

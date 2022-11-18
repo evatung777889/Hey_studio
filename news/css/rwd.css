@@ -1,0 +1,59 @@
+@media screen and (max-width:414px){
+
+    body{
+        width: 100vw;
+    }
+
+    .news li{
+        flex-direction: column;
+                
+    }
+
+    .word_1 , .word{
+        margin-left: 0;
+        
+    }
+
+    .news img:nth-child(odd), .news img:nth-child(even){
+        margin-left:0;
+        width: 75%;
+    }
+
+    .news ul li.reverse{
+        flex-direction: column-reverse;
+    }
+
+    .choose{
+        padding-top: 0;
+    }
+
+    .change_page{
+        display: none;
+    }
+
+    .news ul .reverse1{
+        display:block;
+        text-align: center;
+        width: 100vw;
+        margin: auto;
+    }
+
+    .word{
+        max-width: 402px;
+    }
+
+    .news ul .reverse2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .news ul .reverse1 a{
+        margin-bottom: 150px;
+
+
+
+
+
+
+
+}

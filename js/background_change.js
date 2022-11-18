@@ -32,4 +32,5 @@ function changePicture() {
     setTimeout(changePicture, slideTime);
 }
 
+
 window.onload = changePicture;

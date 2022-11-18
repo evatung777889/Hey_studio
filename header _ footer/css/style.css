@@ -2,12 +2,6 @@
 
 
 
-:target:before {
-    content: "";
-    display: block;
-    height:90px;
-}
-
 /*-----------header----------*/
 #header{
     background-color: rgba(255, 255, 255,.9);
@@ -106,21 +100,21 @@
     padding-left: 6%;
 }
 
-#bar{
+.header_container i{
     display: none;
 }
 
 /*-----------footer----------*/
 #footer{
     background-color: rgb(255, 255, 255);
-    border-top: 1px solid #999;
 }
 
 .smail_logo{
     display: block;
     margin: 0 auto;
     padding-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    width: 10%;
 }
 
 

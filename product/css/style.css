@@ -44,20 +44,23 @@ body{
 
 
 /* ---------------右邊照片----------------- */
-.center_pic{
-    margin-top: 160px;
+.big__img{
+    padding-top: 160px;
 }
 
-.center_pic ul{
+.small__img{
+    margin-top: 20px;
     display: flex;
+    width: 375px;
 }
 
-.center_pic ul li{
-    flex-direction: row;
+.small__img img{
     flex-grow: 1;
-    margin:10px 0 10px 0;
-    text-align: center;
+    margin-right:20px;
+    width: 80%;
 }
+
+
 
 /* ---------------右邊商品資訊----------------- */
 
@@ -232,4 +235,23 @@ body{
 
 .product ul li p:hover{
     color: red;
+}
+/*--------------------------------*/
+.magnifierWrap {
+	width: 375px; 
+	margin: auto; 
+	position: relative;
+}
+.magnifier {
+	width: 100px; 
+	height: 100px;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	display: none;
+    background: url('../pic/ring/ring_4/bg_1.png') no-repeat;
+    background-position: center center;
+
 }

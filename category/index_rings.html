@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
     <link rel="stylesheet" href="../header _ footer/css/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../header _ footer/css/rwd_footer_header.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="../../jQUERY/practice/vendors/jquery/jquery-3.6.1.min.js"></script>
     <title>Hey Studio_category</title>
   </head>
   <body>
     <!----------------------header---------------------->
     <div id="header">
       <div class="header_container">
+
+            <i class="fa-solid fa-bars"></i>
+
             <div class="logo_1">
               <a href="../index.html"><img src="../header _ footer/pic/Group 128.svg" alt="" /></a>
             </div>
-           <div class="list">
-             <ul>
+           <div class="list" style="display: none;">
+             <ul class="header_nav">
                <li><a href="../news/index.html">最新消息</a></li>
 
-               <li><a href="../category/index_rings.html">產品列表</a>
+               <li class="header_nav_li"><a href=""><p>產品列表</p></a>
                 <ol>
                   <li><a href="../category/index_All items_1.html">All items</a></li>
                   <li><a href="../category/index_rings.html">戒指系列</a></li>
@@ -30,7 +36,7 @@
                 </ol>
                </li>
 
-               <li><a href="../about us/index.html">關於我們</a>
+               <li class="header_nav_li"><a href=""><p>關於我們</p></a>
                 <ol>
                   <li><a href="../about us/index.html">品牌理念</a></li>
                   <li><a href="../Store information/index.html">門市資訊</a></li>
@@ -46,9 +52,6 @@
              <a href=""><span class="material-symbols-outlined">shopping_cart</span></a>
            </div>
   
-         <div id="bar">
-           <i class="fa-solid fa-bars"></i>
-         </div>
      </div>
     </div>
   <!----------------------center---------------------->
@@ -59,7 +62,7 @@
         <ul>
           <li><a href="../category/index_All items_1.html">All items</a></li>
           <li><a href="../category/index_rings.html">戒指系列</a></li>
-          <li><a href="../category/index_rings.html">耳環系列</a></li>
+          <li><a href="../category/index_earing.html">耳環系列</a></li>
           <li><a href="../category/index_necklace.html">項鍊系列</a></li>
         </ul>
       </div>
@@ -71,7 +74,7 @@
         <a class="bread_2" href="index_rings.html"><p>戒指系列</p></a>
        </div> 
       <!--商品列表-->
-      <ul>
+      <ul class="category">
 
         <li>
           <a href="../product/index.html">
@@ -192,6 +195,8 @@
       <h2>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</h2>
       <p>參考資源: Vacanza、Bonny & Read 飾品、Rami。</p>
     </div>
+
+    <script src="../js/list.js"></script>
 
 </body>
 

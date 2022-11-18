@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
     <link rel="stylesheet" href="../header _ footer/css/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../header _ footer/css/rwd_footer_header.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="../../jQUERY/practice/vendors/jquery/jquery-3.6.1.min.js"></script>
     <title>Hey studio_notice</title>
   </head>
   <body>
     <!----------------------header---------------------->
     <div id="header">
       <div class="header_container">
+
+            <i class="fa-solid fa-bars"></i>
+
             <div class="logo_1">
               <a href="../index.html"><img src="../header _ footer/pic/Group 128.svg" alt="" /></a>
             </div>
            <div class="list">
-             <ul>
+             <ul class="header_nav">
                <li><a href="../news/index.html">最新消息</a></li>
 
-               <li><a href="../category/index_rings.html">產品列表</a>
+               <li class="header_nav_li"><a href=""><p>產品列表</p></a>
                 <ol>
                   <li><a href="../category/index_All items_1.html">All items</a></li>
                   <li><a href="../category/index_rings.html">戒指系列</a></li>
@@ -30,7 +36,7 @@
                 </ol>
                </li>
 
-               <li><a href="../about us/index.html">關於我們</a>
+               <li class="header_nav_li"><a href=""><p>關於我們</p></a>
                 <ol>
                   <li><a href="../about us/index.html">品牌理念</a></li>
                   <li><a href="../Store information/index.html">門市資訊</a></li>
@@ -46,12 +52,8 @@
              <a href=""><span class="material-symbols-outlined">shopping_cart</span></a>
            </div>
   
-         <div id="bar">
-           <i class="fa-solid fa-bars"></i>
-         </div>
      </div>
     </div>
-
 
       <!---------------------center---------------------->
 
@@ -70,11 +72,11 @@
 
       <div class="choose">
         <ul>
-          <li><a href="#term01">訂購方式</a></li>
-          <li><a href="#term02">付款方式</a></li>
-          <li><a href="#term03">戒圍量測</a></li>
-          <li><a href="#term04">運送方式</a></li>
-          <li><a href="#term05">退換貨方式</a></li>
+          <li><a href="javascript:void(1)" data-id="1">訂購方式</a></li>
+          <li><a href="javascript:void(1)" data-id="2">付款方式</a></li>
+          <li><a href="javascript:void(1)" data-id="3">戒圍量測</a></li>
+          <li><a href="javascript:void(1)" data-id="4">運送方式</a></li>
+          <li><a href="javascript:void(1)" data-id="5">退換貨方式</a></li>
         </ul>
       </div>
     
@@ -82,18 +84,18 @@
         <ul>
     
           <li>
-            <h3 id="term01">訂購方式｜</h3>
-            <p>◎可以於網站直接下單，訂購後，消費者請於 7天內付款全額。<br>
-               ◎現貨出貨為 7個工作天內出貨（不包含例假日）。</p>
+            <h3 id="area1">訂購方式｜</h3>
+            <p><span>◎</span>可以於網站直接下單，訂購後，消費者請於 7天內付款全額。<br>
+              <span>◎</span>現貨出貨為 7個工作天內出貨（不包含例假日）。</p>
           </li>
           <br>
           <li>
-            <h3 id="term02">付款方式｜</h3>
-            <p>LINE PAY、匯款、信用卡。</p>
+            <h3 id="area2">付款方式｜</h3>
+            <p>LINE PAY、匯款、信用卡。</p> 
           </li>
           <br>
           <li class="bic">
-            <h3 id="term03">戒圍測量｜</h3>
+            <h3 id="area3">戒圍測量｜</h3>
             <p>◎手指每一指配戴的手圍並不相同，請分別測量。</p>
     
             <div class="method_1">
@@ -129,12 +131,12 @@
           </li>
           <br><br>
           <li class="transport">
-            <h3 id="term04">運送方式｜</h3>
+            <h3 id="area4">運送方式｜</h3>
             <p>使用便利商店店到店方式（711、全家），全台灣運費 80元。</p>
           </li>
           <br>
           <li>
-            <h3  id="term05">退換貨方式｜</h3>
+            <h3  id="area5">退換貨方式｜</h3>
             <p>◎本店僅提供「只退不換」的退貨服務<br>
               ◎取貨後如有不適合、瑕疵或收到錯誤商品於7日鑑賞期內(非試用期，包含例假日)且商品<br>
                   全新狀態下方可辦理退貨，並請於鑑賞期內與專人聯繫，待賣場確認收到商品後續將由<br>
@@ -210,7 +212,10 @@
       <div class="references">
         <h2>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</h2>
         <p>參考資源: Vacanza、Bonny & Read 飾品、Rami。</p>
-      </div> 
+      </div>
+      
+      <script src="../js/list.js"></script>
+      <script src="../js/scroll.js"></script>
       
   </body>
 </html>

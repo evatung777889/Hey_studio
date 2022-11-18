@@ -1,0 +1,84 @@
+@media screen and (max-width:414px){
+    
+    body{
+        width: 100vw;
+    }
+
+    .center_list{
+        display: none;
+    }
+
+    .center_list_pic_word{
+        flex-direction: column;
+    }
+
+    .center{
+        width: 100vw;
+        height: 580px;
+    }
+
+    .information p{
+        margin: 0 ;
+        width: 80%;
+        padding-left: 29px;
+        margin-bottom: 15px;
+    }
+
+    .information{
+        margin-left: 0;
+        padding-top: 30px;
+    }
+
+    .information h3{
+        padding-left: 10px;
+    }
+
+    .information img{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .product ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product ul li{
+        margin-left: 0;
+    }
+
+    .category{
+        flex-direction: row;
+        width: 414px;
+    }
+
+    .category li{
+        width: 200px;
+    }
+
+    .category img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    .center_pic{
+        margin: 70px auto 0;
+    }
+
+    .center_word{
+        margin-top: 20px;
+    }
+
+    .shop_car a{
+        margin-left: 55px;
+    }
+
+    .header_container{
+        width: 100vw;
+    }
+
+
+
+}

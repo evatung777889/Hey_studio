@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
   <link rel="stylesheet" href="../header _ footer/css/style.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../header _ footer/css/rwd_footer_header.css">
+  <link rel="stylesheet" href="css/rwd.css">
+  <script src="../../jQUERY/practice/vendors/jquery/jquery-3.6.1.min.js"></script>
   <title>Hey Studio_login</title>
 </head>
 
@@ -15,14 +18,17 @@
   <!----------------------header---------------------->
   <div id="header">
     <div class="header_container">
+
+          <i class="fa-solid fa-bars"></i>
+
           <div class="logo_1">
             <a href="../index.html"><img src="../header _ footer/pic/Group 128.svg" alt="" /></a>
           </div>
          <div class="list">
-           <ul>
+           <ul class="header_nav">
              <li><a href="../news/index.html">最新消息</a></li>
 
-             <li><a href="../category/index_rings.html">產品列表</a>
+             <li class="header_nav_li"><a href=""><p>產品列表</p></a>
               <ol>
                 <li><a href="../category/index_All items_1.html">All items</a></li>
                 <li><a href="../category/index_rings.html">戒指系列</a></li>
@@ -31,7 +37,7 @@
               </ol>
              </li>
 
-             <li><a href="../about us/index.html">關於我們</a>
+             <li class="header_nav_li"><a href=""><p>關於我們</p></a>
               <ol>
                 <li><a href="../about us/index.html">品牌理念</a></li>
                 <li><a href="../Store information/index.html">門市資訊</a></li>
@@ -47,9 +53,6 @@
            <a href=""><span class="material-symbols-outlined">shopping_cart</span></a>
          </div>
 
-       <div id="bar">
-         <i class="fa-solid fa-bars"></i>
-       </div>
    </div>
   </div>
   <!---------------------會員登入---------------------->
@@ -98,6 +101,53 @@
         </div>
       </div>
     </div>
+  </div>
+
+<!---------------------------RWD---------------------------------->
+  <div class="login-box">
+    <div class="lb-header">
+      <a href="#" class="active" id="login-box-link">會員登入</a>
+      <a href="#" id="signup-box-link">會員註冊</a>
+    </div>
+    <div class="social-login">
+        <a href="#" class="social"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="#" class="social"><i class="fa-brands fa-line fa-2x"></i></a>
+        <a href="#" class="social"><i class="fa-brands fa-google-plus fa-2x"></i></a>
+    </div>
+    <form class="email-login">
+      <div class="u-form-group">
+        <input class="form-group" type="text" placeholder="電子郵件或手機號碼">
+      </div>
+      <div class="u-form-group">
+        <input type="text" placeholder="密碼">
+      </div>
+      <div class="u-form-group">
+        <button>立即登入</button>
+      </div>
+      <div class="u-form-group">
+        <a href="#" class="forgot-password">忘記密碼?</a>
+      </div>
+    </form>
+    <form class="email-signup">
+      <div class="u-form-group">
+        <input class="form-group1" type="text" placeholder="用戶姓名">
+      </div>
+      <div class="u-form-group">
+        <input class="form-group" type="text" placeholder="E-MAIL">
+      </div>
+      <div class="u-form-group">
+        <input class="form-group" type="text" placeholder="手機號碼">
+      </div>
+      <div class="u-form-group">
+        <input class="form-group" type="text" placeholder="密碼(至少8個字元)">
+      </div>
+      <div class="u-form-group">
+        <input class="form-group" type="text" placeholder="生日日期(YYYY/MM/DD)">
+      </div>
+      <div class="u-form-group">
+        <button>立即加入</button>
+      </div>
+    </form>
   </div>
 
   <!---------------------footer---------------------->
@@ -163,6 +213,9 @@
       <p>參考資源: Vacanza、Bonny & Read 飾品、Rami。</p>
     </div>
 
+    <script src="../../jQUERY/practice/vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="../js/list.js"></script>
+
     <script>
       const signUpButton = document.getElementById('signUp');
       const signInButton = document.getElementById('signIn');
@@ -175,6 +228,23 @@
       signInButton.addEventListener('click', () => {
         container.classList.remove("right-panel-active");
       });
+
+      $(".email-signup").hide();
+      $("#signup-box-link").click(function(){
+        $(".email-login").fadeOut(100);
+        $(".email-signup").delay(100).fadeIn(100);
+        $("#login-box-link").removeClass("active");
+        $("#signup-box-link").addClass("active");
+      });
+      $("#login-box-link").click(function(){
+        $(".email-login").delay(100).fadeIn(100);;
+        $(".email-signup").fadeOut(100);
+        $("#login-box-link").addClass("active");
+        $("#signup-box-link").removeClass("active");
+      });
+
+      
+
     </script>
 
 </body>

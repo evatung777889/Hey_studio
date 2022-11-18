@@ -156,3 +156,11 @@ h4{
 .fa-angle-left{
     display: none;
 }
+
+.news ul .reverse1{
+    display: none;
+}
+
+#header .logo_1{
+    padding-left: 67px;
+}

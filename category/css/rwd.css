@@ -1,0 +1,50 @@
+@media screen and (max-width:414px){
+    
+    .center_list {
+        display: none;
+    }
+
+    .category_list{
+        margin-top: 40px;
+    }
+
+    .logo_1{
+        padding-left: 70px;
+    }
+
+    .category_list .category {
+        flex-direction: row;
+        width:414px;
+    }
+
+
+    .category_list img{
+        width: 80%;
+    }
+
+    .category_list_bread .bread_1 p{
+        margin-left: 32px;
+    }
+
+    .header_container{
+        width: 100vw;
+    }
+
+    .category ul{
+        outline: 2px solid red;
+    }
+
+    .category_list li{
+        width: 200px;
+    }
+
+    .change_page {
+        display: none;
+    }
+
+    .category_list .all_2{
+        display: block;
+    }
+
+
+}

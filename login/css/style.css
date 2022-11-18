@@ -27,15 +27,7 @@ body{
     h2 {
         text-align: center;
     }
-    
-    p {
-        font-size: 14px;
-        font-weight: 100;
-        line-height: 20px;
-        letter-spacing: 0.5px;
-        margin: 20px 0 30px;
-    }
-    
+       
     span {
         font-size: 12px;
     }
@@ -44,14 +36,18 @@ body{
         color: #333;
         font-size: 14px;
         text-decoration: none;
-        margin: 15px 0;
+        margin: 5px 0;
+    }
+
+    .smail_logo{
+        margin-bottom: 10px;
     }
     
     button {
         border-radius: 20px;
-        border: 1px solid #FF4B2B;
-        background-color: #FF4B2B;
-        color: #FFFFFF;
+        border: 1px solid #EDA48C;
+        background-color: #EDA48C;
+        color: #000000;
         font-size: 12px;
         font-weight: bold;
         padding: 6px 60px;
@@ -59,6 +55,14 @@ body{
         text-transform: uppercase;
         transition: transform 80ms ease-in;
         margin-top: 15px;
+    }
+
+    .overlay-panel{
+        line-height: 3;
+    }
+
+    .form-container button {
+        color: #ffffff;
     }
     
     button:active {
@@ -71,7 +75,7 @@ body{
     
     button.ghost {
         background-color: transparent;
-        border-color: #FFFFFF;
+        border-color: #000000;
     }
     
     form {
@@ -104,7 +108,6 @@ body{
         margin: 0 auto;
         margin-bottom: 100px;
         margin-top: 100px;
-        /* border: 2px solid #ccc; */
     }
     
     .form-container {
@@ -166,13 +169,13 @@ body{
     }
     
     .overlay {
-        background: #FF416C;
-        background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-        background: linear-gradient(to right, #FF4B2B, #FF416C);
+        background: #e8e4d4;
+        background: -webkit-linear-gradient(to right, #e8e4d4, #fff4ca);
+        background: linear-gradient(to right, #e8e4d4, #fff4ca);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 0;
-        color: #FFFFFF;
+        color: #000000;
         position: relative;
         left: -100%;
         height: 100%;
@@ -230,17 +233,140 @@ body{
         width: 40px;
     }
 
-    #header .list ul li a {
+    #header .list ul li p{
+        margin: 0;
         font-size: 16px;
-        margin: 10px 0 0 0;
-        line-height: 2;
+        margin-bottom: 5px;
     }
 
-    #header .list ul li ol a{
+    
+    .list ul li ol a{
         display: block;
-        margin: auto;
+        background-color: rgb(255, 255, 255);
     }
+    
 
-    .container .fa-brands:hover{
-        color: orangered;
-    }
+/*-------------------------------------------------------*/
+
+.login-box{
+    position:relative;
+    margin: 10px auto;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+  }
+  
+  .lb-header{
+    position:relative;
+    color: #00415d;
+    margin: 5px 5px 10px 5px;
+    padding-bottom:10px;
+    text-align:center;
+    height:28px;
+  }
+  .lb-header a{
+    margin: 0 25px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+  .lb-header .active{
+    color: #029f5b;
+    font-size: 18px;
+  }
+  .social-login{
+    position:relative;
+    float: left;
+    width: 60%;
+    height:auto;
+    padding: 20px 0 15px 0;
+    margin-left:67px;
+  }
+  .social-login a{
+    position:relative;
+    width:calc(40% - 8px);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 3%;
+    text-align:center;
+ }
+
+  .email-login,.email-signup{
+    position:relative;
+    float: left;
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    text-align:center;
+  }
+  .u-form-group{
+    width:100%;
+    margin-bottom: 10px;
+  }
+  .u-form-group input[type="email"],
+  .u-form-group input[type="password"]{
+    width: calc(50% - 22px);
+    height:45px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 2px;
+    color: #333;
+    font-size:0.8rem;
+    -webkit-transition:all 0.1s linear;
+    -moz-transition:all 0.1s linear;
+    transition:all 0.1s linear;
+  }
+  .u-form-group input:focus{
+    border-color: #358efb;
+  }
+  .u-form-group button{
+    width:50%;
+    background-color: #EDA48C;;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
+  .forgot-password{
+    width:50%;
+    text-align: left;
+    text-decoration: underline;
+    color: #888;
+    font-size: 0.75rem;
+  }
+
+  .list ul li a{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .list ul{
+    padding-top:25px;
+    padding-bottom: 10px;
+    
+  }
+  #header .list ul li ol{
+    position: relative;
+    z-index: 9999;
+  }
+
+

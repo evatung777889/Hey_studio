@@ -1,0 +1,139 @@
+@media screen and (max-width:414px){
+
+        .top_pic{
+            height: 90px;
+        }
+
+        .top_pic_word{
+            display: none;
+        }
+
+        .new_arrive ul{
+            flex-direction: column;
+        }
+
+        .new_arrive li{
+            margin: 0 auto;
+        }
+
+        .new_arrive img{
+            width: 100%;
+        }
+
+        .center_pic{
+            padding-bottom: 260px;
+        }
+
+        .category ul{
+            flex-direction: column;
+        }
+
+        .category li{
+            margin: 0 auto;
+        }
+
+        .category img{
+            width: 100%;
+        }
+
+        .category h4{
+            margin-bottom: 0;
+        }
+
+        .category p{
+            margin-bottom: 50px;
+        }
+
+        .pic_list img{
+            margin-left: 20px;
+        }
+
+        .bag_pic{
+            height: 120px;
+        }
+
+        .pic_list p{
+            font-size: 12px;
+        }
+
+        .pic_list .pic1{
+            margin-left:-20px;
+        }
+
+        .news_list1,.news_list2{
+            display: none;
+        }
+
+        .logo_1 img{
+            padding-left: 0;
+        }
+
+        .logo_1{
+            padding-left:80px ;
+        }
+
+        .word_new p{
+            font-size: 14px;
+        }
+
+        .new_arrive h3{
+            font-size: 24px;
+        }
+
+        .new_arrive h6{
+            font-size: 15px;
+        }
+
+        .new_arrive p{
+            font-size: 15px;
+        }
+
+        .center_pic .up{
+            top: -2px;
+        }
+
+        .category h4{
+            font-size: 16px;
+        }
+        
+
+        .category p{
+            font-size: 14px;
+        }
+
+        .news_list li h5{
+            font-size: 16px;
+        }
+
+        .news_list li p{
+            font-size: 14px;
+        }
+
+        .top_pic img{
+            bottom: -1px;
+        }
+
+        .group h1,.group{
+            font-size: 8px;
+        }
+
+        .smail_logo{
+            margin-bottom:15px;
+        }
+
+        .smail_icon img{
+            width: 80%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+}

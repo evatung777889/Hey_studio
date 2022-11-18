@@ -97,6 +97,10 @@ body{
     padding-left: 220px;
 }
 
+#word ul li #area1{
+    margin-top: 80px;
+}
+
 #word li p{
     font-size: 18px;
     line-height: 2.5;

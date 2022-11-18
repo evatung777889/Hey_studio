@@ -1,0 +1,30 @@
+@media screen and (max-width:414px){
+
+    #container{
+        display: none;
+    }
+
+    .login-box{
+        display: block;
+        margin: 80px auto;
+    }
+
+    #header .logo_1 {
+        margin: 0;
+        padding-left: 50px;
+    }
+
+    .icon{
+        padding-left: 0;
+    }
+
+    .list li:hover ol{
+        top: -53px;
+        left: 160px;
+    }
+
+    #header .list ul li ol{
+        position: unset;
+    }
+
+}

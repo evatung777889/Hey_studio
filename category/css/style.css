@@ -109,6 +109,12 @@ body{
     width: 100%;
 }
 
+.category_list .all_2{
+    display: none;
+}
+
+
+
 
 
 /*--------------換頁--------------*/

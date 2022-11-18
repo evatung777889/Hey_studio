@@ -9,20 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="header _ footer/css/style.css">
     <link rel="stylesheet" href="front_page/css/style.css">
+    <link rel="stylesheet" href="header _ footer/css/rwd_footer_header.css">
+    <link rel="stylesheet" href="front_page/css/rwd.css">
+    <script src="../jQUERY/practice/vendors/jquery/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
     <title>Hey Studio</title>
+
+    <style>
+      .owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+    </style>
   </head>
   <body>
     <!----------------------header---------------------->
     <div id="header">
       <div class="header_container">
+
+            <i class="fa-solid fa-bars"></i>
+
             <div class="logo_1">
               <a href="index.html"><img src="header _ footer/pic/Group 128.svg" alt="" /></a>
             </div>
-           <div class="list">
-             <ul>
+           <div class="list" >
+             <ul class="header_nav">
                <li><a href="news/index.html">最新消息</a></li>
 
-               <li><a href="category/index_rings.html">產品列表</a>
+               <li class="header_nav_li"><a href=""><p>產品列表</p></a>
                 <ol>
                   <li><a href="category/index_All items_1.html">All items</a></li>
                   <li><a href="category/index_rings.html">戒指系列</a></li>
@@ -31,7 +56,7 @@
                 </ol>
                </li>
 
-               <li><a href="about us/index.html">關於我們</a>
+               <li class="header_nav_li"><a href=""><p>關於我們</p></a>
                 <ol>
                   <li><a href="about us/index.html">品牌理念</a></li>
                   <li><a href="Store information/index.html">門市資訊</a></li>
@@ -47,9 +72,6 @@
              <a href=""><span class="material-symbols-outlined">shopping_cart</span></a>
            </div>
   
-         <div id="bar">
-           <i class="fa-solid fa-bars"></i>
-         </div>
      </div>
     </div>
   <!---------------------center---------------------->
@@ -145,10 +167,10 @@
 
     <div class="news_list">
       <h4>最新消息</h4>
-      <ul>
-        <li><a href=""><span class="material-symbols-outlined">arrow_back_ios</span></a></li>
+        <ul class="news_list_ul owl-carousel">
+        <!-- <li><a href=""><span class="material-symbols-outlined">arrow_back_ios</span></a></li> -->
         
-        <li>
+        <li class="news_list1">
           <a href="">
             <img src="front_page/pic/Rectangle 367.png" alt="">
             <h5>木質感優美耳環</h5>
@@ -156,7 +178,7 @@
           </a>
         </li>
 
-        <li>
+        <li class="news_list2">
           <a href="">
             <img src="front_page/pic/Rectangle 366.png" alt="">
             <h5>浪漫套組</h5>
@@ -164,7 +186,7 @@
           </a>
         </li>
 
-        <li>
+        <li class="news_list3">
           <a href="">
             <img src="front_page/pic/Rectangle 368.png" alt="">
             <h5>絕美玫瑰金戒指來了！</h5>
@@ -172,7 +194,7 @@
           </a>
         </li>
 
-        <li><a href=""><span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+        <!-- <li><a href=""><span class="material-symbols-outlined">arrow_forward_ios</span></a></li> -->
 
       </ul>
     </div>
@@ -244,6 +266,14 @@
       </div> 
       
       <script src="js/background_change.js"></script>
+      <script src="js/list.js"></script>
+      <!-- owl.carousel -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            
+      <script src="js/img.js"></script>
+
       
   </body>
 </html>
