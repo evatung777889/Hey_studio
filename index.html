@@ -17,20 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
     <title>Hey Studio</title>
 
-    <style>
-      .owl-item > div {
-  cursor: pointer;
-  margin: 6% 8%;
-  transition: margin 0.4s ease;
-}
-.owl-item.center > div {
-  cursor: auto;
-  margin: 0;
-}
-.owl-item:not(.center) > div:hover {
-  opacity: .75;
-}
-    </style>
   </head>
   <body>
     <!----------------------header---------------------->
@@ -166,37 +152,84 @@
 
     <div class="news_list">
       <h4>最新消息</h4>
-        <ul class="news_list_ul owl-carousel">
-        <!-- <li><a href=""><span class="material-symbols-outlined">arrow_back_ios</span></a></li> -->
-        
-        <li class="news_list1">
-          <a href="">
-            <img src="front_page/pic/Rectangle 367.png" alt="">
-            <h5>木質感優美耳環</h5>
-            <p>想要成為氣質小姐姐嗎？<br>戴上這款耳環就對了~</p>
-          </a>
-        </li>
-
-        <li class="news_list2">
-          <a href="">
-            <img src="front_page/pic/Rectangle 366.png" alt="">
-            <h5>浪漫套組</h5>
-            <p>浪漫限定優惠套組全新上市<br>快點進來選購吧！</p>
-          </a>
-        </li>
-
-        <li class="news_list3">
-          <a href="">
-            <img src="front_page/pic/Rectangle 368.png" alt="">
-            <h5>絕美玫瑰金戒指來了！</h5>
-            <p>想要成為氣質小姐姐嗎？<br>戴上玫瑰金戒指就對了~</p>
-          </a>
-        </li>
-
-        <!-- <li><a href=""><span class="material-symbols-outlined">arrow_forward_ios</span></a></li> -->
-
-      </ul>
-    </div>
+        <div class="container">
+          <div class="carousel">
+            <div class="a">
+              <div class="item">
+                 <a href="">
+                  <img src="front_page/pic/news_6.png" alt="">
+                  <div class="item_word_1">
+                    <h5>木質感優美耳環</h5>
+                    <p>想要成為氣質小姐姐嗎？<br>戴上這款耳環就對了~</p>
+                  </div>
+                 </a>
+              </div>
+            </div>
+  
+            <div class="b">
+              <div class="item">
+                 <a href="">
+                  <img src="front_page/pic/news_5.png" alt="">
+                  <div class="item_word_2">
+                  <h5>浪漫套組</h5>
+                  <p>浪漫限定優惠套組全新上市<br>快點進來選購吧！</p>
+                  </div>
+                 </a>
+              </div>
+            </div>
+  
+            <div class="c">
+              <div class="item">
+                 <a href="">
+                  <img src="front_page/pic/news_4.png" alt="">
+                  <div class="item_word_3">
+                  <h5>絕美玫瑰金戒指來了！</h5>
+                  <p>想要成為氣質小姐姐嗎？<br>戴上玫瑰金戒指就對了~</p>
+                 </div>
+                 </a>
+              </div>
+            </div>
+  
+            <div class="d">
+              <div class="item">
+                 <a href="">
+                  <img src="front_page/pic/news_1.png" alt="">
+                  <div class="item_word_4">
+                  <h5>七夕情人節的浪漫</h5>
+                  <p>什麼？！情人節又要到了<br>趕緊來看情人節送禮好選擇吧！</p>
+                  </div>
+                 </a>
+              </div>
+            </div>
+  
+            <div class="e">
+              <div class="item">
+                 <a href="">
+                  <img src="front_page/pic/news_2.png" alt="">
+                  <div class="item_word_5">
+                  <h5>寵愛媽咪</h5>
+                  <p>把愛送到心坎裡~<br>為媽咪無私付出過的溫柔<br>遞上您最直接的愛！</p>
+                  </div>
+                 </a>
+              </div>
+            </div>
+  
+            <div class="f">
+              <div class="item">
+                 <a href="">
+                  <img src="front_page/pic/news_3.png" alt="">
+                  <div class="item_word_6">
+                  <h5>振興優惠</h5>
+                  <p>購物幸福感？<br>此時不買待何時！！</p>
+                 </div>
+                 </a>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    <div class="next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+    <div class="prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
 
 
   </div>
@@ -267,12 +300,57 @@
       <script src="js/jquery-3.6.1.min.js"></script>  
       <!-- <script src="js/background_change.js"></script> -->
       <script src="js/list.js"></script>
-      <!-- owl.carousel -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-            
-      <script src="js/img.js"></script>
+
+      <script>
+        var carousel = $(".carousel"),
+        items = $(".item"),
+        currdeg  = 0;
+
+        $(".next").on("click", { d: "n" }, rotate);
+        $(".prev").on("click", { d: "p" }, rotate);
+
+        function rotate(e){
+          if(e.data.d=="n"){
+            currdeg = currdeg - 60;
+          }
+          if(e.data.d=="p"){
+            currdeg = currdeg + 60;
+          }
+          carousel.css({
+            "-webkit-transform": "rotateY("+currdeg+"deg)",
+            "-moz-transform": "rotateY("+currdeg+"deg)",
+            "-o-transform": "rotateY("+currdeg+"deg)",
+            "transform": "rotateY("+currdeg+"deg)"
+          });
+            items.css({
+            "-webkit-transform": "rotateY("+(-currdeg)+"deg)",
+            "-moz-transform": "rotateY("+(-currdeg)+"deg)",
+            "-o-transform": "rotateY("+(-currdeg)+"deg)",
+            "transform": "rotateY("+(-currdeg)+"deg)"
+          });
+
+        }
+
+        function changePicture() {
+        
+          if (i < images.length - 1) {
+              i++;
+              item_word_1.style.display='block'
+              item_word_1.display='block'
+              item_word_2.display='none'
+              item_word_2.style.display='none'
+          } else {
+              i = 0;
+              num1.style.display='none'
+              num2.style.display='none'
+              num3.style.display='block'
+              num4.style.display='block'
+          }
+          setTimeout(changePicture, slideTime);
+      }
+
+      </script>
+      </script>
 
       
   </body>

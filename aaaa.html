@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+
+  padding: 70px 0;
+  font: 15px/20px Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.carousel div {
+  transform-style: preserve-3d;
+  
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+}
+.a .item {
+  background: #ed1c24;
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px) rotateY(-60deg);
+}
+.b .item {
+  background: #0072bc;
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px)  rotateY(-120deg);
+}
+.c .item {
+  background: #39b54a;
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px) rotateY(-180deg);
+}
+.d .item {
+  background: #f26522;
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px) rotateY(-240deg);
+} 
+.e .item {
+  background: #630460;
+}
+.f {
+  transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
+}
+.f .item {
+  background: #8c6239;
+}
+
+.next, .prev {
+  color: #444;
+  position: absolute;
+  top: 100px;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  top: 104px;
+  box-shadow: 0 1px 0 #999;
+}
+.next { right: 5em; }
+.prev { left: 5em; }
+
+.item h5, .item p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+}    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="carousel">
+          <div class="a">
+            <div class="item">
+               <a href="">
+                <img src="front_page/pic/Rectangle 368.png" alt="">
+                <h5>木質感優美耳環</h5>
+                <!-- <p>想要成為氣質小姐姐嗎？<br>戴上這款耳環就對了~</p> -->
+               </a>
+            </div>
+          </div>
+
+          <div class="b">
+            <div class="item">
+               <a href="">
+                <img src="front_page/pic/Rectangle 368.png" alt="">
+                <h5>浪漫套組</h5>
+                <!-- <p>浪漫限定優惠套組全新上市<br>快點進來選購吧！</p> -->
+               </a>
+            </div>
+          </div>
+
+          <div class="c">
+            <div class="item">
+               <a href="">
+                <img src="front_page/pic/Rectangle 368.png" alt="">
+                <h5>絕美玫瑰金戒指來了！</h5>
+                <!-- <p>想要成為氣質小姐姐嗎？<br>戴上玫瑰金戒指就對了~</p> -->
+               </a>
+            </div>
+          </div>
+
+          <div class="d">
+            <div class="item">
+               <a href="">
+                <img src="front_page/pic/Rectangle 368.png" alt="">
+                <h5>七夕情人節的浪漫</h5>
+                <!-- <p>什麼？！情人節又要到了<br>趕緊來看情人節送禮好選擇吧！</p> -->
+               </a>
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="item">
+               <a href="">
+                <img src="front_page/pic/Rectangle 368.png" alt="">
+                <h5>寵愛媽咪</h5>
+                <!-- <p>把愛送到心坎裡~<br>為媽咪無私付出過的溫柔<br>遞上您最直接的愛！</p> -->
+               </a>
+            </div>
+          </div>
+
+          <div class="f">
+            <div class="item">
+               <a href="">
+                <img src="front_page/pic/Rectangle 368.png" alt="">
+                <h5>振興優惠</h5>
+                <!-- <p>購物幸福感？<br>此時不買待何時！！</p> -->
+               </a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <div class="next">Next</div>
+      <div class="prev">Prev</div>
+      <script src="js/jquery-3.6.1.min.js"></script>
+
+      <script>
+
+
+        
+ var carousel = $(".carousel"),
+    items = $(".item"),
+    currdeg  = 0;
+
+$(".next").on("click", { d: "n" }, rotate);
+$(".prev").on("click", { d: "p" }, rotate);
+
+function rotate(e){
+  if(e.data.d=="n"){
+    currdeg = currdeg - 60;
+  }
+  if(e.data.d=="p"){
+    currdeg = currdeg + 60;
+  }
+  carousel.css({
+    "-webkit-transform": "rotateY("+currdeg+"deg)",
+    "-moz-transform": "rotateY("+currdeg+"deg)",
+    "-o-transform": "rotateY("+currdeg+"deg)",
+    "transform": "rotateY("+currdeg+"deg)"
+  });
+    items.css({
+    "-webkit-transform": "rotateY("+(-currdeg)+"deg)",
+    "-moz-transform": "rotateY("+(-currdeg)+"deg)",
+    "-o-transform": "rotateY("+(-currdeg)+"deg)",
+    "transform": "rotateY("+(-currdeg)+"deg)"
+  });
+}
+      </script>
+    
+</body>
+</html>

@@ -43,6 +43,7 @@ body{
 
 .top_pic_word .num1{
     letter-spacing: 50px;
+    
 }
 
 .top_pic_word .num2{
@@ -179,8 +180,8 @@ body{
     color: #B4664D;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 50px;
-    padding-top: 20px;
+    margin-bottom: 130px;
+    padding-top: 50px;
     letter-spacing: 5px;
 }
 
@@ -329,6 +330,106 @@ body{
 #header .list ul li ol{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+  
+  .container {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .container img{
+    max-width: 100%;
+  }
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  .carousel div {
+    transform-style: preserve-3d;
+    
+  }
+  
+  .item {
+    display: block;
+    position: absolute;
+    max-width: 250px;
+    height: 200px;
+    font-size: 5em;
+    text-align: center;
+    opacity: 0.95;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+  }
+  
+  .b {
+    transform: rotateY(60deg) translateZ(250px) rotateY(-60deg);
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(250px)  rotateY(-120deg);
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(250px) rotateY(-180deg);
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(250px) rotateY(-240deg);
+  } 
+  .f {
+    transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
+  }
+  
+  .next, .prev {
+    color: #444;
+    position: absolute;
+    top: 870px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: box-shadow 0.1s, top 0.1s;
+  }
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+    top: 870px;
+    box-shadow: 0 1px 0 #999;
+  }
+  .next { right: 5em; }
+  .prev { left: 5em; }
+  
+  .item h5, .item p{
+      font-size: 16px;
+      margin: 0 auto;
+      padding-top: 10px;
+  }
+
+  .item p{
+    font-size: 12px;
+    color: #000;
+    line-height: 1.6;
+}
+  
+  .container a{
+    text-decoration: none;
+    color: #BA8D16;
+  }
+
+  .container a:hover{
+    color: red;
+  }
+
+  .smail_logo{
+    padding-top: 160px;
+  }
+
 
 
 
