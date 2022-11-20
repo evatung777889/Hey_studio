@@ -47,39 +47,77 @@ parseInt
 
   //放大鏡特效
 
-  $(document).ready(function(){
+  // $(document).ready(function(){
 
-    var nativeWidth = 0;
-    var nativeHeight = 0;
+  //   var nativeWidth = 0;
+  //   var nativeHeight = 0;
   
-    $(".magnifierWrap").mousemove(function(e) {
-      if(!nativeWidth && !nativeHeight) {
-        var imgObject = new Image();
-        imgObject.src = $(".smallImg").attr("src");
-        nativeWidth = imgObject.width;
-        nativeHeight = imgObject.height;
-      }
+  //   $(".magnifierWrap").mousemove(function(e) {
+  //     if(!nativeWidth && !nativeHeight) {
+  //       var imgObject = new Image();
+  //       imgObject.src = $(".smallImg").attr("src");
+  //       nativeWidth = imgObject.width;
+  //       nativeHeight = imgObject.height;
+  //     }
 
-      else {
-        var magnifyOffset = $(this).offset();
-        var mouseX = e.pageX - magnifyOffset.left;
-        var mouseY = e.pageY - magnifyOffset.top;
+  //     else {
+  //       var magnifyOffset = $(this).offset();
+  //       var mouseX = e.pageX - magnifyOffset.left;
+  //       var mouseY = e.pageY - magnifyOffset.top;
         
-        if(mouseX < $(this).width() && mouseY < $(this).height() && mouseX > 0 && mouseY > 0) {
+  //       if(mouseX < $(this).width() && mouseY < $(this).height() && mouseX > 0 && mouseY > 0) {
+  //         $(".magnifier").fadeIn(100);
+  //       }
+  //       else{
+  //         $(".magnifier").fadeOut(100);
+  //       }
+  //       if($(".magnifier").is(":visible")){
+  //         var smallImgX = Math.round(mouseX/$(".smallImg").width()*nativeWidth - $(".magnifier").width()/2)*-1;
+  //         var smallImgY = Math.round(mouseY/$(".smallImg").height()*nativeHeight - $(".magnifier").height()/2)*-1;
+  //         var bgp = smallImgX + "px " + smallImgY + "px";
+          
+  //         var largeImgX = mouseX - $(".magnifier").width()/2;
+  //         var largeImgY = mouseY - $(".magnifier").height()/2;
+          
+  //         $(".magnifier").css({left: largeImgX, top: largeImgY, backgroundPosition: bgp});
+  //       }
+  //     }
+  //   });
+  // });
+  
+  $(document).ready(function() {
+    var native_width = 0;
+    var native_height = 0;
+    $(".magnifierWrap").mousemove(function(e) {
+      if (!native_width && !native_height) {
+        var image_object = new Image();
+        image_object.src = $(".smallImg").attr("src");
+        native_width = image_object.width;
+        native_height = image_object.height;
+      } else {
+        var magnify_offset = $(this).offset();
+        var mx = e.pageX - magnify_offset.left;
+        var my = e.pageY - magnify_offset.top;
+  
+        if (mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0) {
           $(".magnifier").fadeIn(100);
-        }
-        else{
+        } else {
           $(".magnifier").fadeOut(100);
         }
-        if($(".magnifier").is(":visible")){
-          var smallImgX = Math.round(mouseX/$(".smallImg").width()*nativeWidth - $(".magnifier").width()/2)*-1;
-          var smallImgY = Math.round(mouseY/$(".smallImg").height()*nativeHeight - $(".magnifier").height()/2)*-1;
-          var bgp = smallImgX + "px " + smallImgY + "px";
-          
-          var largeImgX = mouseX - $(".magnifier").width()/2;
-          var largeImgY = mouseY - $(".magnifier").height()/2;
-          
-          $(".magnifier").css({left: largeImgX, top: largeImgY, backgroundPosition: bgp});
+        if ($(".magnifier").is(":visible")) {
+          var rx =
+            Math.round(
+              mx / $(".smallImg").width() * native_width - $(".magnifier").width() / 2
+            ) * -1;
+          var ry =
+            Math.round(
+              my / $(".smallImg").height() * native_height - $(".magnifier").height() / 2
+            ) * -1;
+          var bgp = rx + "px " + ry + "px";
+  
+          var px = mx - $(".magnifier").width() / 2;
+          var py = my - $(".magnifier").height() / 2;
+          $(".magnifier").css({ left: px, top: py, backgroundPosition: bgp });
         }
       }
     });
