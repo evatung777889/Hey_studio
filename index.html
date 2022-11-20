@@ -156,7 +156,7 @@
           <div class="carousel">
             <div class="a">
               <div class="item">
-                 <a href="">
+                 <a href="news/index.html">
                   <img src="front_page/pic/news_6.png" alt="">
                   <div class="item_word_1">
                     <h5>木質感優美耳環</h5>
@@ -168,9 +168,9 @@
   
             <div class="b">
               <div class="item">
-                 <a href="">
+                 <a href="news/index.html">
                   <img src="front_page/pic/news_5.png" alt="">
-                  <div class="item_word_2">
+                  <div class="item_word_2"  style="display:none">
                   <h5>浪漫套組</h5>
                   <p>浪漫限定優惠套組全新上市<br>快點進來選購吧！</p>
                   </div>
@@ -180,9 +180,9 @@
   
             <div class="c">
               <div class="item">
-                 <a href="">
+                 <a href="news/index.html">
                   <img src="front_page/pic/news_4.png" alt="">
-                  <div class="item_word_3">
+                  <div class="item_word_3"  style="display:none">
                   <h5>絕美玫瑰金戒指來了！</h5>
                   <p>想要成為氣質小姐姐嗎？<br>戴上玫瑰金戒指就對了~</p>
                  </div>
@@ -192,9 +192,9 @@
   
             <div class="d">
               <div class="item">
-                 <a href="">
+                 <a href="news/index.html">
                   <img src="front_page/pic/news_1.png" alt="">
-                  <div class="item_word_4">
+                  <div class="item_word_4"  style="display:none">
                   <h5>七夕情人節的浪漫</h5>
                   <p>什麼？！情人節又要到了<br>趕緊來看情人節送禮好選擇吧！</p>
                   </div>
@@ -204,9 +204,9 @@
   
             <div class="e">
               <div class="item">
-                 <a href="">
+                 <a href="news/index.html">
                   <img src="front_page/pic/news_2.png" alt="">
-                  <div class="item_word_5">
+                  <div class="item_word_5"  style="display:none">
                   <h5>寵愛媽咪</h5>
                   <p>把愛送到心坎裡~<br>為媽咪無私付出過的溫柔<br>遞上您最直接的愛！</p>
                   </div>
@@ -216,9 +216,9 @@
   
             <div class="f">
               <div class="item">
-                 <a href="">
+                 <a href="news/index.html">
                   <img src="front_page/pic/news_3.png" alt="">
-                  <div class="item_word_6">
+                  <div class="item_word_6"  style="display:none">
                   <h5>振興優惠</h5>
                   <p>購物幸福感？<br>此時不買待何時！！</p>
                  </div>
@@ -307,13 +307,31 @@
 
         $(".next").on("click", { d: "n" }, rotate);
         $(".prev").on("click", { d: "p" }, rotate);
-
+        var arr = [1,2,3,4,5,6]; //6張圖片
+        var num = 1;
         function rotate(e){
-          if(e.data.d=="n"){
+
+          if(e.data.d=="n"){//向右輪播箭頭
             currdeg = currdeg - 60;
+            num += 1
+            if(num > 6){
+              num = 1 //超過第六張圖片自動輪播回第一張
+            }
+            for(i=1;i<=arr.length;i++){
+              $(".item_word_"+i).css("display","none"); //1~6全部隱藏
+            }
+            $(".item_word_"+num).css("display","block"); //跑到哪一個的時候打開
           }
           if(e.data.d=="p"){
             currdeg = currdeg + 60;
+            num -= 1
+            if(num <1 ){
+              num = 6
+            }
+            for(i=1;i<=arr.length;i++){
+              $(".item_word_"+i).css("display","none");
+            }
+            $(".item_word_"+num).css("display","block");
           }
           carousel.css({
             "-webkit-transform": "rotateY("+currdeg+"deg)",
@@ -327,26 +345,7 @@
             "-o-transform": "rotateY("+(-currdeg)+"deg)",
             "transform": "rotateY("+(-currdeg)+"deg)"
           });
-
         }
-
-        function changePicture() {
-        
-          if (i < images.length - 1) {
-              i++;
-              item_word_1.style.display='block'
-              item_word_1.display='block'
-              item_word_2.display='none'
-              item_word_2.style.display='none'
-          } else {
-              i = 0;
-              num1.style.display='none'
-              num2.style.display='none'
-              num3.style.display='block'
-              num4.style.display='block'
-          }
-          setTimeout(changePicture, slideTime);
-      }
 
       </script>
 

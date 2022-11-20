@@ -119,10 +119,57 @@
 
         .smail_logo{
             margin-bottom:15px;
+            padding-top:80px;
         }
 
         .smail_icon img{
             width: 80%;
+        }
+
+        .next, .prev{
+            top: 670px;
+        }
+        .next {
+            right: -2em;
+        }
+
+        .prev{
+            left: -1.8em;
+        }
+
+        .next:active, .prev:active {
+            top: 670px;
+        }
+
+        .container{
+            /* overflow: hidden; */
+        }
+        .container img{
+            width: 100vw;
+        }
+        .next {
+            background-color: white;
+            height: 400px;
+            padding-top: 110px;
+            padding-left: 10px;
+            margin-top:-159px;
+        }
+
+        .prev{
+            background-color: white;
+            height: 400px;
+            padding-top: 110px;
+            margin-top:-148px;
+            width:6px;
+        }
+
+        .material-symbols-outlined{
+            padding-left: 7px;
+        }
+
+        .news_list h4{
+            margin-bottom:80px;
+
         }
 
 
