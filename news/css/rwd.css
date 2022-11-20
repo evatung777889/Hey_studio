@@ -1,4 +1,4 @@
-@media screen and (max-width:414px){
+@media screen and (max-width:428px){
 
     body{
         width: 100vw;
@@ -50,10 +50,5 @@
     .news ul .reverse1 a{
         margin-bottom: 150px;
 
-
-
-
-
-
-
+    }
 }
