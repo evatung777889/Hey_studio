@@ -79,6 +79,14 @@
         width: 100vw;
     }
 
+    .big__img{
+        padding-top: 60px;
+    }
+
+    .small__img{
+        padding-left:19px;
+    }
+
 
 
 }

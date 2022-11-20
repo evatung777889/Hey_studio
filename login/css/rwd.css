@@ -10,7 +10,6 @@
     }
 
     #header .logo_1 {
-        margin: 0;
         padding-left: 50px;
     }
 
@@ -25,6 +24,9 @@
 
     #header .list ul li ol{
         position: unset;
+    }
+    .logo_1 img{
+        padding-left: 0;
     }
 
 }
