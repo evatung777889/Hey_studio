@@ -11,24 +11,17 @@ btn.addEventListener('click',function(){
 },false)
 
 
-
+//子選單收合
   $(function(){
-      $('.list ol').hide();
-      $('.header_nav_li>a').click(function(e){
-        e.preventDefault();
-        $(this).next().slideToggle();
-      })
-  })
+    console.log('zzzz',$(window).width())
+      if($(window).width() < 428){
+        $('.list ol').hide();
+        $('.header_nav_li>a').click(function(e){
+          e.preventDefault();
+          $(this).next().slideToggle();
+        })
+      };
 
-  let mql = window.matchMedia("(max-width: 428px)")
-  console.log(mql)
-  // 監聽狀態改變
-   
-  function testView (e) {
-      return e.matches ? console.log('Smaller than 428px width!!') : console.log('Bigger than 428px width!!')
-  }
-  mql.addEventListener(testView);
-  // 執行時呼叫的監聽函式
-  testView(mql)
+  })
 
   
