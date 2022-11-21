@@ -430,6 +430,11 @@ body{
     padding-top: 160px;
   }
 
+  /* ---------RWD輪播關閉----------- */
+  .wrapper{
+    display: none;
+  }
+
 
 
 
