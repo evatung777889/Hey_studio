@@ -73,7 +73,7 @@ body{
 
 
 .big_pic img{
-    width: 100%;
+    max-width: 100%;
     
 }
 
@@ -83,7 +83,7 @@ body{
     text-align: center;
     line-height: 650px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 3s;
     -moz-animation: fadeIn 3s;
