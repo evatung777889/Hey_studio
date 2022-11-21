@@ -162,5 +162,11 @@ h4{
 }
 
 #header .logo_1{
-    padding-left: 67px;
+    padding-left: 45px;
 }
+
+.logo_1 img{
+    padding-left: 0;
+}
+
+

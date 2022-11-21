@@ -20,4 +20,15 @@ btn.addEventListener('click',function(){
       })
   })
 
+  let mql = window.matchMedia("(max-width: 428px)")
+  console.log(mql)
+  // 監聽狀態改變
+   
+  function testView (e) {
+      return e.matches ? console.log('Smaller than 428px width!!') : console.log('Bigger than 428px width!!')
+  }
+  mql.addEventListener(testView);
+  // 執行時呼叫的監聽函式
+  testView(mql)
+
   

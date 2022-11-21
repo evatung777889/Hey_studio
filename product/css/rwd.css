@@ -20,7 +20,7 @@
     .information p{
         margin: 0 ;
         width: 80%;
-        padding-left: 29px;
+        padding-left: 57px;
         margin-bottom: 15px;
     }
 
@@ -30,12 +30,13 @@
     }
 
     .information h3{
-        padding-left: 10px;
+        padding-left: 40px;
     }
 
     .information img{
         width: 80%;
         margin-bottom: 15px;
+        margin-left:35px;
     }
 
     .product ul{
@@ -84,7 +85,8 @@
     }
 
     .small__img{
-        padding-left:19px;
+        margin: 0 auto;
+        padding-top: 5px;
     }
 
 

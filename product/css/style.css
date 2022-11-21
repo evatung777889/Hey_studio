@@ -236,6 +236,14 @@ body{
 .product ul li p:hover{
     color: red;
 }
+
+.category img{
+    transform:scale(1,1);transition: all .5s ease-out
+}
+.category img:hover{
+    transform:scale(1.1,1.1);
+}
+
 /*--------------------------------*/
 .magnifierWrap {
 	width: 375px; 

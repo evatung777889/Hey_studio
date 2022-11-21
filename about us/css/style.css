@@ -12,8 +12,65 @@ body{
 .big_pic{
     background-image: url("../pic/big_pic.png");
     background-size: cover;
-    background-position: center center;     
+    background-position: center center; 
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;    
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
+   
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
+   
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
+   
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
+   
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
+
+
 
 .big_pic img{
     width: 100%;
@@ -26,6 +83,12 @@ body{
     text-align: center;
     line-height: 650px;
     font-weight: bold;
+    letter-spacing: 10px;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
 }
 
 .logo_3{

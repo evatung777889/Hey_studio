@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="front_page/css/rwd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Hey Studio</title>
 
   </head>
@@ -60,7 +60,7 @@
      </div>
     </div>
   <!---------------------center---------------------->
-
+<div>
   <div class="top_pic" >
     <div class="top_pic_word">
        <p class="num1">ENJOY</p> 
@@ -70,7 +70,7 @@
     </div>
     <img src="front_page/pic/carousel_3.png" alt="">
   </div>
-  <div class="word_new">
+  <div class="word_new" data-aos="fade-up" data-aos-duration="1500">
     <p>飾品帶著許多涵義與故事到了現在<br>
       人們總像忘不了過去的記憶般<br>
       習慣性賦予飾品重要的涵義與象徵<br>
@@ -80,7 +80,7 @@
       </p>
   </div>
 
-  <div class="new_arrive">
+  <div class="new_arrive"  data-aos="fade-up" data-aos-duration="1500">
     <h3>NEW ARRIVAL</h3>
     <ul>
       <li><a href=""><img src="front_page/pic/new_1.png" alt="">
@@ -100,12 +100,12 @@
     </ul>
   </div>
 
-  <div class="center_pic">
+  <div class="center_pic"  data-aos="fade-up" data-aos-duration="1500">
     <img class="up" src="front_page/pic/center_up.png" alt="">
     <img class="down" src="front_page/pic/center_down.png" alt="">
   </div>
 
-  <div class="category">
+  <div class="category"  data-aos="fade-up" data-aos-duration="1500">
     <h3>產品分類</h3>
     <ul>
       <li><a href="category/index_rings.html"><img src="front_page/pic/series_1.png" alt="">
@@ -128,7 +128,7 @@
 
     <div class="pic"> <!--新增-->
     <div class="bag_pic"></div>
-    <div class="pic_list">
+    <div class="pic_list"  data-aos="fade-up" data-aos-duration="1500">
       <ul>
 
         <li>
@@ -150,7 +150,7 @@
       </ul>
     </div>
 
-    <div class="news_list">
+    <div class="news_list"  data-aos="fade-up" data-aos-duration="1500">
       <h4>最新消息</h4>
         <div class="container">
           <div class="carousel">
@@ -261,7 +261,7 @@
     </div>
 
   </div>
-
+</div>
 
 
   <!---------------------footer---------------------->
@@ -331,6 +331,10 @@
       <script src="js/list.js"></script>
 
       <script>
+
+        AOS.init();
+
+
         var carousel = $(".carousel"),
         items = $(".item"),
         currdeg  = 0;
